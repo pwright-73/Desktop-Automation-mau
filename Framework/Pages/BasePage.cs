@@ -9,43 +9,44 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using TestModellerCSharp.Utilities;
 using Utilities;
 
 namespace Pages
 {
     public class BasePage
     {
-        protected Application app { get; set; }
+        protected FlaUIApplication app { get; set; }
 
-        public BasePage(Application app)
+        public BasePage(FlaUIApplication app)
         {
             this.app = app;
         }
 
         public void passStep(String msg)
         {
-            TestModellerLogger.PassStep(app, msg);
+            TestModellerLogger.PassStep(app.app, msg);
         }
 
         public void passStepWithScreenshot(String msg)
         {
-            TestModellerLogger.PassStepWithScreenshot(app, msg);
+            TestModellerLogger.PassStepWithScreenshot(app.app, msg);
         }
 
         public void failStep(String msg)
         {
-            TestModellerLogger.FailStepWithScreenshot(app, msg);
+            TestModellerLogger.FailStepWithScreenshot(app.app, msg);
 
-            app.Close();
+            app.app.Close(true);
 
             Assert.Fail(msg);
         }
 
         public void failStep(String msg, String details)
         {
-            TestModellerLogger.FailStepWithScreenshot(app, msg + "; " + details);
+            TestModellerLogger.FailStepWithScreenshot(app.app, msg + "; " + details);
 
-            app.Close();
+            app.app.Close(true);
 
             Assert.Fail(msg + "; " + details);
         }

@@ -15,6 +15,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestModellerCSharp.Utilities;
 using Utilities;
 
 namespace Tests
@@ -86,7 +87,7 @@ namespace Tests
 
         protected DataAllocationEngine dataAllocationEngine;
 
-        protected Application app;
+        protected FlaUIApplication app = new FlaUIApplication();
 
         [SetUp]
         public void initDriver()
@@ -105,7 +106,7 @@ namespace Tests
         [TearDown]
         public void closerDriver()
         {
-            app.Close(true);
+            app.app.Close(true);
 
             TestModellerId[] attr = TestExecutionContext.CurrentContext.CurrentTest.Method.GetCustomAttributes<TestModellerId>(true);
             if (attr != null && attr.Length > 0)
@@ -119,10 +120,10 @@ namespace Tests
                 testPathRun.vipRunId = (TestRunIdGenerator.GenerateGuid());
 
                 if (TestExecutionContext.CurrentContext.CurrentResult.ResultState.Equals(ResultState.Success)) {
-                    TestModellerLogger.PassStep(app, "Test Passed");
+                    TestModellerLogger.PassStep(app.app, "Test Passed");
                     testPathRun.testStatus = (TestPathRunStatus.Passed);
                 } else {
-                    TestModellerLogger.FailStepWithScreenshot(app, "Test Failed");
+                    TestModellerLogger.FailStepWithScreenshot(app.app, "Test Failed");
 
                     testPathRun.testStatus = (TestPathRunStatus.Failed);
                 }

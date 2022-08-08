@@ -224,7 +224,6 @@
     <Compile Include="Pages\Samples\Calculator\CalculatorPage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tests\Addition_DefaultProfile.cs" />
     <Compile Include="Tests\Samples\CalculatorTest.cs" />
     <Compile Include="Tests\TestBase.cs" />
   </ItemGroup>
@@ -234,6 +233,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Compile Include="Utilities\FlaUIApplication.cs" />
     <Compile Include="Utilities\GetScreenShot.cs" />
     <Compile Include="Utilities\TestModellerLogger.cs" />
   </ItemGroup>

@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestModellerCSharp.Utilities;
 
 namespace TestModellerCSharp.Pages.Samples.Calculator
 {
@@ -16,10 +17,10 @@ namespace TestModellerCSharp.Pages.Samples.Calculator
     {
         protected Window calcWindow {get; set;}
 
-        public CalculatorPage(Application app)
+        public CalculatorPage(FlaUIApplication app)
             : base(app)
         {
-            calcWindow = app.GetMainWindow(new UIA3Automation());
+            calcWindow = app.app.GetMainWindow(new UIA3Automation());
 
             System.Threading.Thread.Sleep(2000);
         }

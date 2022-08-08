@@ -24,7 +24,7 @@ namespace TestModellerCSharp.Tests
         [Test]
         public void AdditionTest()
         {
-            app = Application.LaunchStoreApp("Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
+            app.app = Application.LaunchStoreApp("Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
 
             // Switch to default mode
             CalculatorPage calculatorPage = new CalculatorPage(app);

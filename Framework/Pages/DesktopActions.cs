@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestModellerCSharp.Utilities;
 using Utilities;
 
 namespace TestModellerCSharp.Pages
@@ -18,7 +19,7 @@ namespace TestModellerCSharp.Pages
     {
         protected Window currentWindow { get; set; }
 
-        public DesktopActions(Application app) : base(app)
+        public DesktopActions(FlaUIApplication app) : base(app)
         {
             this.app = app;
         }
@@ -30,7 +31,7 @@ namespace TestModellerCSharp.Pages
          */
         public void OpenApplication(String appName)
         {
-            app = Application.LaunchStoreApp(appName);
+            app.app = Application.LaunchStoreApp(appName);
 
             UseMainWindow();
 
@@ -43,7 +44,7 @@ namespace TestModellerCSharp.Pages
          */
         public void UseMainWindow()
         {
-            currentWindow = app.GetMainWindow(new UIA3Automation());
+            currentWindow = app.app.GetMainWindow(new UIA3Automation());
 
             System.Threading.Thread.Sleep(2000);
         }
@@ -75,7 +76,7 @@ namespace TestModellerCSharp.Pages
          */
         public void CloseApplication()
         {
-            app.Close();
+            app.app.Close(true);
         }
 
         /**
@@ -489,7 +490,7 @@ namespace TestModellerCSharp.Pages
                 }
             }
 
-            failStep("Listbox does not contain item '" + name + "'")
+            failStep("Listbox does not contain item '" + name + "'");
         }
 
         /**
