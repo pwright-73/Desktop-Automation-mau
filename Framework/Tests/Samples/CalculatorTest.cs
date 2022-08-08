@@ -46,13 +46,13 @@ namespace TestModellerCSharp.Tests
             desktopActions.OpenApplication("Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
 
             // Switch to default mode
-            desktopActions.ClickByAutomationId("num7Button");
+            desktopActions.Click("num7Button");
 
-            desktopActions.ClickByAutomationId("plusButton");
+            desktopActions.Click("plusButton");
 
-            desktopActions.ClickByAutomationId("num1Button");
+            desktopActions.Click("num1Button");
 
-            desktopActions.ClickByAutomationId("equalButton");
+            desktopActions.Click("equalButton");
 
             desktopActions.AssertLabelText("CalculatorResults", "8");
         }

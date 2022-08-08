@@ -105,6 +105,8 @@ namespace Tests
         [TearDown]
         public void closerDriver()
         {
+            app.Close(true);
+
             TestModellerId[] attr = TestExecutionContext.CurrentContext.CurrentTest.Method.GetCustomAttributes<TestModellerId>(true);
             if (attr != null && attr.Length > 0)
             {
