@@ -221,6 +221,7 @@
   <ItemGroup>
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\DesktopActions.cs" />
+    <Compile Include="Pages\pwright73manpau_insure_test.java" />
     <Compile Include="Pages\Samples\Calculator\CalculatorPage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
