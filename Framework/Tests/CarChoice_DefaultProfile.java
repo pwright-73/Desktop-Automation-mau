@@ -14,14 +14,14 @@ import utilities.testmodeller.TestModellerLogger;
 
 //https://internalcsitraining.cloud.testinsights.io/app/#!/model-engine/guid/f2ba3492-358e-4f1c-b94c-a64eaa6a67e4
 @Listeners(TestNGListener.class)
-@TestModellerSuite(id = 520, profileId = 100714)
+@TestModellerSuite(id = 521, profileId = 100714)
 public class CarChoice_DefaultProfile extends TestBase
 {
     
 
     
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "0a2f151e-7ab8-4cc1-9203-d257a4534eac")
+    @TestModellerPath(guid = "73624337-f956-4f99-afa8-a79c6e382222")
     public void OpelPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequest()
     {
         
@@ -39,7 +39,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "fb5aa253-36af-46a9-b400-2c4d6203f559")
+    @TestModellerPath(guid = "ac6aa033-829e-4650-9b64-a314e5fcf2eb")
     public void OpelPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequest1()
     {
         
@@ -57,7 +57,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "2d1489a8-a944-4dfa-a5a1-6838d115d24f")
+    @TestModellerPath(guid = "04d4dbbe-e216-4a6b-8965-f3ae7c3a84c1")
     public void OpelPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequest2()
     {
         
@@ -75,7 +75,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "696486bd-35e6-43b4-9412-3f0ddd7ca961")
+    @TestModellerPath(guid = "4cd2880e-7815-49f1-bedb-ce071992a703")
     public void OpelPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequest3()
     {
         
@@ -93,7 +93,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "c11df0c7-2da4-4c13-bf00-f2e57dc32e2c")
+    @TestModellerPath(guid = "b692a16d-8d4f-409c-8283-992785886c25")
     public void OpelPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequest4()
     {
         
@@ -111,7 +111,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "c2c5ba99-63c3-4013-92a4-90a74fb29196")
+    @TestModellerPath(guid = "9b9b6a12-1119-463a-94e6-6ccb3adfb060")
     public void OpelPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequest5()
     {
         
@@ -129,7 +129,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "921c85f3-8ed1-456a-b314-c03ce8bf4d79")
+    @TestModellerPath(guid = "6f22bd2c-a473-428d-8154-33f6dbb327d7")
     public void OpelPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequest6()
     {
         
@@ -147,7 +147,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "ae83f311-7d3a-42f2-ba1f-f8d3c6abe699")
+    @TestModellerPath(guid = "ea6ccd62-3444-417a-9d21-d7a5cd77d0b9")
     public void OpelPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequest7()
     {
         
@@ -165,7 +165,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "5030a6b9-e581-4fd6-add9-12bf840109a5")
+    @TestModellerPath(guid = "d76c7ec8-0026-43a8-885f-b117e422db6d")
     public void OpelPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequest8()
     {
         
@@ -183,7 +183,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "b9288497-be5b-4aab-b717-f4edb2d0e226")
+    @TestModellerPath(guid = "a2f63618-ba39-4786-aeed-12d1997d3cf4")
     public void OpelPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuotereques()
     {
         
@@ -201,7 +201,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "4d5d3a44-6ae2-4130-b91f-d40ca368a774")
+    @TestModellerPath(guid = "20c140ee-3cc0-4fee-999a-584aef1933db")
     public void OpelPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuotereques1()
     {
         
@@ -219,7 +219,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "deab3024-adc0-4a72-aa00-6aedf6ddd7fa")
+    @TestModellerPath(guid = "32931cfa-02b6-498a-acd9-1989b13943ed")
     public void OpelPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuotereques2()
     {
         
@@ -237,7 +237,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "ce9fb31c-2362-4ead-b2ed-a3cc8a8cf1ed")
+    @TestModellerPath(guid = "f4fd2eb5-866b-496d-a49a-a231e2cced9b")
     public void LanciaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ()
     {
         
@@ -255,7 +255,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "7fe18d42-716b-4357-b30d-a7e84c6cd187")
+    @TestModellerPath(guid = "312261f2-d664-4def-a8fd-bf9c8006214a")
     public void LanciaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ1()
     {
         
@@ -273,7 +273,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "4f521b98-17ae-4b12-a604-8fa298b60bf9")
+    @TestModellerPath(guid = "06cb19a1-0799-4165-b8a2-6889c344bdd1")
     public void LanciaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ2()
     {
         
@@ -291,7 +291,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "41188fee-845f-4acf-a528-5fd5f0fa5ce6")
+    @TestModellerPath(guid = "854c071f-c514-4c60-b49b-a2cb8e3dc6b1")
     public void LanciaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ3()
     {
         
@@ -309,7 +309,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "ac46e4ec-cf7d-43a9-a8f5-804af1b7059c")
+    @TestModellerPath(guid = "14df3ccd-9ffc-4bda-8be5-5e7927bccaba")
     public void LanciaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ4()
     {
         
@@ -327,7 +327,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "719d91b5-5580-4fdb-8d42-8775534981b0")
+    @TestModellerPath(guid = "e3470439-0e47-4364-a7ae-df3a748400a5")
     public void LanciaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ5()
     {
         
@@ -345,7 +345,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "3804812c-bb3f-40f4-8c2f-cbb2373312c4")
+    @TestModellerPath(guid = "c8b02f14-258e-450d-8c19-c29f3254b405")
     public void LanciaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ6()
     {
         
@@ -363,7 +363,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "cd9ca35a-6cc3-42e6-90a1-bd21b684f399")
+    @TestModellerPath(guid = "3b666f3e-d807-49a9-a139-0b5c0b5eef6c")
     public void LanciaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ7()
     {
         
@@ -381,7 +381,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "5fae154b-8bf4-4fb8-9e93-141766c314b4")
+    @TestModellerPath(guid = "c0d244f0-5c8e-4a30-81b7-d58f215d70ea")
     public void LanciaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ8()
     {
         
@@ -399,7 +399,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "7f3db91d-64f1-405d-95c1-26681d8e5983")
+    @TestModellerPath(guid = "10575b12-11d1-4a14-9377-17f43821af46")
     public void ToyotaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ()
     {
         
@@ -417,7 +417,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "25ee6c01-dc28-47ea-ba94-087723d33d77")
+    @TestModellerPath(guid = "aa1bb8ab-fa18-4675-8c68-e60b64c85018")
     public void ToyotaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ1()
     {
         
@@ -435,7 +435,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "ef29ae2b-a042-43ff-9a1d-d109a0e57bff")
+    @TestModellerPath(guid = "d651d4fd-62d7-4a1f-879b-c4d5562e6896")
     public void ToyotaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ2()
     {
         
@@ -453,7 +453,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "e34daee3-8aac-439b-baf3-60ec132f5e48")
+    @TestModellerPath(guid = "68bde443-be63-4f84-ae10-5172fe53e610")
     public void ToyotaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ3()
     {
         
@@ -471,7 +471,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "7b7e73c2-a0a7-4ee6-b585-03c75d3c5337")
+    @TestModellerPath(guid = "011ba181-6755-4d04-a8d8-842f083e10f1")
     public void ToyotaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ4()
     {
         
@@ -489,7 +489,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "e1455476-a697-47c5-b35e-31a93823c3f9")
+    @TestModellerPath(guid = "f8bd8c0c-182e-4c10-aa6f-e8f8a9e9d126")
     public void ToyotaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ5()
     {
         
@@ -507,7 +507,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "f4abe773-c909-4caf-8ab5-a5df7e624c5a")
+    @TestModellerPath(guid = "9b42692b-db30-421a-be47-d7dbe59b9f64")
     public void ToyotaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ6()
     {
         
@@ -525,7 +525,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "63b02a98-c55e-4412-9dd0-30add97e2f76")
+    @TestModellerPath(guid = "e2f4ced1-ce3b-408e-b406-cdff5d1902d3")
     public void ToyotaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ7()
     {
         
@@ -543,7 +543,7 @@ public class CarChoice_DefaultProfile extends TestBase
 
 
     @Test  (groups= {"CarChoice","CarChoice - Default Profile"})
-    @TestModellerPath(guid = "aece83be-5e1c-4f52-8bf7-934e66d6dff0")
+    @TestModellerPath(guid = "4026b26d-6303-48a2-9c0a-09bb5295a6fb")
     public void ToyotaPositiveSelectProductionyearProductionyearPositiveSelectTypePositiveSelectModelQuoterequ8()
     {
         
