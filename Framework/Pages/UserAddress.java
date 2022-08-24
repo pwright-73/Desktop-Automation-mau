@@ -24,11 +24,11 @@ public class UserAddress extends BasePage
 
 
 	
-	private By Zip_codeElem = By.xpath("//DIV[contains(text(),'Zip code')]");
-
 	private By _City_Elem = By.xpath("//DIV[contains(text(),'City')]");
 
 	private By _Street_Elem = By.xpath("//DIV[contains(text(),'Street')]");
+
+	private By Zip_codeElem = By.xpath("//DIV[contains(text(),'Zip code')]");
 
 
 	
@@ -56,31 +56,6 @@ public class UserAddress extends BasePage
         }
     }
 
-      
-	/**
- 	 * Enter Zip code
-     * @name Enter Zip code
-     */
- 	public void Enter_Zip_code(String Zip_code)
- 	{
- 	    
- 		WebElement elem = getWebElement(Zip_codeElem);
-
- 		if (elem == null) {
-    		ExtentReportManager.failStepWithScreenshot(m_Driver, "Enter_Zip_code", "Enter_Zip_code failed. Unable to locate object: " + Zip_codeElem.toString());
-
-    		TestModellerLogger.FailStepWithScreenshot(m_Driver, "Enter_Zip_code", "Enter_Zip_code failed. Unable to locate object: " + Zip_codeElem.toString());
-
- 			Assert.fail("Unable to locate object: " + Zip_codeElem.toString());
-         }
-
- 		elem.sendKeys(Zip_code);
- 		
-
-  		ExtentReportManager.passStep(m_Driver, "Enter_Zip_code " + Zip_code);
-
-  		TestModellerLogger.PassStep(m_Driver, "Enter_Zip_code " + Zip_code);
- 	}
       
 	/**
  	 * Enter  City 
@@ -130,4 +105,29 @@ public class UserAddress extends BasePage
   		ExtentReportManager.passStep(m_Driver, "Enter__Street_ " + _Street_);
 
   		TestModellerLogger.PassStep(m_Driver, "Enter__Street_ " + _Street_);
+ 	}
+      
+	/**
+ 	 * Enter Zip code
+     * @name Enter Zip code
+     */
+ 	public void Enter_Zip_code(String Zip_code)
+ 	{
+ 	    
+ 		WebElement elem = getWebElement(Zip_codeElem);
+
+ 		if (elem == null) {
+    		ExtentReportManager.failStepWithScreenshot(m_Driver, "Enter_Zip_code", "Enter_Zip_code failed. Unable to locate object: " + Zip_codeElem.toString());
+
+    		TestModellerLogger.FailStepWithScreenshot(m_Driver, "Enter_Zip_code", "Enter_Zip_code failed. Unable to locate object: " + Zip_codeElem.toString());
+
+ 			Assert.fail("Unable to locate object: " + Zip_codeElem.toString());
+         }
+
+ 		elem.sendKeys(Zip_code);
+ 		
+
+  		ExtentReportManager.passStep(m_Driver, "Enter_Zip_code " + Zip_code);
+
+  		TestModellerLogger.PassStep(m_Driver, "Enter_Zip_code " + Zip_code);
  	}}
