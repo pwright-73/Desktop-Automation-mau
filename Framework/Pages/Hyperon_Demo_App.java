@@ -13,8 +13,8 @@ import ie.curiositysoftware.testmodeller.TestModellerModule;
 import utilities.reports.ExtentReportManager;
 import utilities.testmodeller.TestModellerLogger;
 
-// https://internalcsitraining.cloud.testinsights.io/app/#!/module-collection/guid/3fe84539-77ff-4c09-9067-9f99a880f96d
-@TestModellerModule(guid = "3fe84539-77ff-4c09-9067-9f99a880f96d")
+// https://internalcsitraining.cloud.testinsights.io/app/#!/module-collection/guid/79fbbb6c-c371-42c1-87a8-e860feab7522
+@TestModellerModule(guid = "79fbbb6c-c371-42c1-87a8-e860feab7522")
 public class Hyperon_Demo_App extends BasePage
 {
 	public Hyperon_Demo_App (WebDriver driver)
@@ -24,11 +24,13 @@ public class Hyperon_Demo_App extends BasePage
 
 
 	
-	private By Zip_codeElem = By.xpath("//DIV[contains(text(),'Zip code')]");
+	private By Production_yearElem = By.xpath("//DIV[contains(text(),'Production year')]");
 
-	private By CityElem = By.xpath("//DIV[contains(text(),'City')]");
+	private By MakeElem = By.xpath("//DIV[contains(text(),'Make')]");
 
-	private By StreetElem = By.xpath("//DIV[contains(text(),'Street')]");
+	private By TypeElem = By.xpath("//DIV[contains(text(),'Type')]");
+
+	private By ModelElem = By.xpath("//DIV[contains(text(),'Model')]");
 
 
 	
@@ -56,78 +58,111 @@ public class Hyperon_Demo_App extends BasePage
         }
     }
 
-     
+    
 	/**
- 	 * Click Zip code
-     * @name Click Zip code
+ 	 * Select Production year
+     * @name Select Production year
      */
-	public void Click_Zip_code()
-	{
-        
-		WebElement elem = getWebElement(Zip_codeElem);
+    public void Select_Production_year(String Production_year)
+ 	{
+ 	    
+ 		WebElement elem = getWebElement(Production_yearElem);
 
-		if (elem == null) {
-    		ExtentReportManager.failStepWithScreenshot(m_Driver, "Click_Zip_code", "Click_Zip_code failed. Unable to locate object: " + Zip_codeElem.toString());
+ 		if (elem == null) {
+    		ExtentReportManager.failStepWithScreenshot(m_Driver, "Select_Production_year", "Select_Production_year failed. Unable to locate object: " + Production_yearElem.toString());
 
-    		TestModellerLogger.FailStepWithScreenshot(m_Driver, "Click_Zip_code", "Click_Zip_code failed. Unable to locate object: " + Zip_codeElem.toString());
+    		TestModellerLogger.FailStepWithScreenshot(m_Driver, "Select_Production_year", "Select_Production_year failed. Unable to locate object: " + Production_yearElem.toString());
 
-			Assert.fail("Unable to locate object: " + Zip_codeElem.toString());
-        }
+ 			Assert.fail("Unable to locate object: " + Production_yearElem.toString());
+         }
 
-		elem.click();
-        
+ 		Select dropdown = new Select(elem);
 
-		ExtentReportManager.passStep(m_Driver, "Click_Zip_code");
+ 		dropdown.selectByVisibleText(Production_year);
+ 		
 
-		TestModellerLogger.PassStep(m_Driver, "Click_Zip_code");
-	}
-     
+ 		ExtentReportManager.passStep(m_Driver, "Select_Production_year " + Production_year);
+
+ 		TestModellerLogger.PassStep(m_Driver, "Select_Production_year " + Production_year);
+ 	}
+    
 	/**
- 	 * Click City
-     * @name Click City
+ 	 * Select Make
+     * @name Select Make
      */
-	public void Click_City()
-	{
-        
-		WebElement elem = getWebElement(CityElem);
+    public void Select_Make(String Make)
+ 	{
+ 	    
+ 		WebElement elem = getWebElement(MakeElem);
 
-		if (elem == null) {
-    		ExtentReportManager.failStepWithScreenshot(m_Driver, "Click_City", "Click_City failed. Unable to locate object: " + CityElem.toString());
+ 		if (elem == null) {
+    		ExtentReportManager.failStepWithScreenshot(m_Driver, "Select_Make", "Select_Make failed. Unable to locate object: " + MakeElem.toString());
 
-    		TestModellerLogger.FailStepWithScreenshot(m_Driver, "Click_City", "Click_City failed. Unable to locate object: " + CityElem.toString());
+    		TestModellerLogger.FailStepWithScreenshot(m_Driver, "Select_Make", "Select_Make failed. Unable to locate object: " + MakeElem.toString());
 
-			Assert.fail("Unable to locate object: " + CityElem.toString());
-        }
+ 			Assert.fail("Unable to locate object: " + MakeElem.toString());
+         }
 
-		elem.click();
-        
+ 		Select dropdown = new Select(elem);
 
-		ExtentReportManager.passStep(m_Driver, "Click_City");
+ 		dropdown.selectByVisibleText(Make);
+ 		
 
-		TestModellerLogger.PassStep(m_Driver, "Click_City");
-	}
-     
+ 		ExtentReportManager.passStep(m_Driver, "Select_Make " + Make);
+
+ 		TestModellerLogger.PassStep(m_Driver, "Select_Make " + Make);
+ 	}
+    
 	/**
- 	 * Click Street
-     * @name Click Street
+ 	 * Select Type
+     * @name Select Type
      */
-	public void Click_Street()
-	{
-        
-		WebElement elem = getWebElement(StreetElem);
+    public void Select_Type(String Type)
+ 	{
+ 	    
+ 		WebElement elem = getWebElement(TypeElem);
 
-		if (elem == null) {
-    		ExtentReportManager.failStepWithScreenshot(m_Driver, "Click_Street", "Click_Street failed. Unable to locate object: " + StreetElem.toString());
+ 		if (elem == null) {
+    		ExtentReportManager.failStepWithScreenshot(m_Driver, "Select_Type", "Select_Type failed. Unable to locate object: " + TypeElem.toString());
 
-    		TestModellerLogger.FailStepWithScreenshot(m_Driver, "Click_Street", "Click_Street failed. Unable to locate object: " + StreetElem.toString());
+    		TestModellerLogger.FailStepWithScreenshot(m_Driver, "Select_Type", "Select_Type failed. Unable to locate object: " + TypeElem.toString());
 
-			Assert.fail("Unable to locate object: " + StreetElem.toString());
-        }
+ 			Assert.fail("Unable to locate object: " + TypeElem.toString());
+         }
 
-		elem.click();
-        
+ 		Select dropdown = new Select(elem);
 
-		ExtentReportManager.passStep(m_Driver, "Click_Street");
+ 		dropdown.selectByVisibleText(Type);
+ 		
 
-		TestModellerLogger.PassStep(m_Driver, "Click_Street");
-	}}
+ 		ExtentReportManager.passStep(m_Driver, "Select_Type " + Type);
+
+ 		TestModellerLogger.PassStep(m_Driver, "Select_Type " + Type);
+ 	}
+    
+	/**
+ 	 * Select Model
+     * @name Select Model
+     */
+    public void Select_Model(String Model)
+ 	{
+ 	    
+ 		WebElement elem = getWebElement(ModelElem);
+
+ 		if (elem == null) {
+    		ExtentReportManager.failStepWithScreenshot(m_Driver, "Select_Model", "Select_Model failed. Unable to locate object: " + ModelElem.toString());
+
+    		TestModellerLogger.FailStepWithScreenshot(m_Driver, "Select_Model", "Select_Model failed. Unable to locate object: " + ModelElem.toString());
+
+ 			Assert.fail("Unable to locate object: " + ModelElem.toString());
+         }
+
+ 		Select dropdown = new Select(elem);
+
+ 		dropdown.selectByVisibleText(Model);
+ 		
+
+ 		ExtentReportManager.passStep(m_Driver, "Select_Model " + Model);
+
+ 		TestModellerLogger.PassStep(m_Driver, "Select_Model " + Model);
+ 	}}
