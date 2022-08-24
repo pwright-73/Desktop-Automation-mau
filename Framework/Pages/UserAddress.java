@@ -13,8 +13,8 @@ import ie.curiositysoftware.testmodeller.TestModellerModule;
 import utilities.reports.ExtentReportManager;
 import utilities.testmodeller.TestModellerLogger;
 
-// https://internalcsitraining.cloud.testinsights.io/app/#!/module-collection/guid/a3b22bed-6199-41f4-adb2-a58ca12ad8f5
-@TestModellerModule(guid = "a3b22bed-6199-41f4-adb2-a58ca12ad8f5")
+// https://internalcsitraining.cloud.testinsights.io/app/#!/module-collection/guid/a614b5e3-c272-4b65-a34d-2cbb05ab04c2
+@TestModellerModule(guid = "a614b5e3-c272-4b65-a34d-2cbb05ab04c2")
 public class UserAddress extends BasePage
 {
 	public UserAddress (WebDriver driver)
@@ -24,11 +24,11 @@ public class UserAddress extends BasePage
 
 
 	
-	private By CityElem = By.xpath("//FONT[contains(text(),'City')]");
+	private By Zip_codeElem = By.xpath("//DIV[contains(text(),'Zip code')]");
 
-	private By StreetElem = By.xpath("//FONT[contains(text(),'Street')]");
+	private By _City_Elem = By.xpath("//DIV[contains(text(),'City')]");
 
-	private By Zip_codeElem = By.xpath("//FONT[contains(text(),'Zip code')]");
+	private By _Street_Elem = By.xpath("//DIV[contains(text(),'Street')]");
 
 
 	
@@ -58,56 +58,6 @@ public class UserAddress extends BasePage
 
       
 	/**
- 	 * Enter City
-     * @name Enter City
-     */
- 	public void Enter_City(String City)
- 	{
- 	    
- 		WebElement elem = getWebElement(CityElem);
-
- 		if (elem == null) {
-    		ExtentReportManager.failStepWithScreenshot(m_Driver, "Enter_City", "Enter_City failed. Unable to locate object: " + CityElem.toString());
-
-    		TestModellerLogger.FailStepWithScreenshot(m_Driver, "Enter_City", "Enter_City failed. Unable to locate object: " + CityElem.toString());
-
- 			Assert.fail("Unable to locate object: " + CityElem.toString());
-         }
-
- 		elem.sendKeys(City);
- 		
-
-  		ExtentReportManager.passStep(m_Driver, "Enter_City " + City);
-
-  		TestModellerLogger.PassStep(m_Driver, "Enter_City " + City);
- 	}
-     
-	/**
- 	 * Click Street
-     * @name Click Street
-     */
-	public void Click_Street()
-	{
-        
-		WebElement elem = getWebElement(StreetElem);
-
-		if (elem == null) {
-    		ExtentReportManager.failStepWithScreenshot(m_Driver, "Click_Street", "Click_Street failed. Unable to locate object: " + StreetElem.toString());
-
-    		TestModellerLogger.FailStepWithScreenshot(m_Driver, "Click_Street", "Click_Street failed. Unable to locate object: " + StreetElem.toString());
-
-			Assert.fail("Unable to locate object: " + StreetElem.toString());
-        }
-
-		elem.click();
-        
-
-		ExtentReportManager.passStep(m_Driver, "Click_Street");
-
-		TestModellerLogger.PassStep(m_Driver, "Click_Street");
-	}
-      
-	/**
  	 * Enter Zip code
      * @name Enter Zip code
      */
@@ -130,4 +80,54 @@ public class UserAddress extends BasePage
   		ExtentReportManager.passStep(m_Driver, "Enter_Zip_code " + Zip_code);
 
   		TestModellerLogger.PassStep(m_Driver, "Enter_Zip_code " + Zip_code);
+ 	}
+      
+	/**
+ 	 * Enter  City 
+     * @name Enter  City 
+     */
+ 	public void Enter__City_(String _City_)
+ 	{
+ 	    
+ 		WebElement elem = getWebElement(_City_Elem);
+
+ 		if (elem == null) {
+    		ExtentReportManager.failStepWithScreenshot(m_Driver, "Enter__City_", "Enter__City_ failed. Unable to locate object: " + _City_Elem.toString());
+
+    		TestModellerLogger.FailStepWithScreenshot(m_Driver, "Enter__City_", "Enter__City_ failed. Unable to locate object: " + _City_Elem.toString());
+
+ 			Assert.fail("Unable to locate object: " + _City_Elem.toString());
+         }
+
+ 		elem.sendKeys(_City_);
+ 		
+
+  		ExtentReportManager.passStep(m_Driver, "Enter__City_ " + _City_);
+
+  		TestModellerLogger.PassStep(m_Driver, "Enter__City_ " + _City_);
+ 	}
+      
+	/**
+ 	 * Enter  Street 
+     * @name Enter  Street 
+     */
+ 	public void Enter__Street_(String _Street_)
+ 	{
+ 	    
+ 		WebElement elem = getWebElement(_Street_Elem);
+
+ 		if (elem == null) {
+    		ExtentReportManager.failStepWithScreenshot(m_Driver, "Enter__Street_", "Enter__Street_ failed. Unable to locate object: " + _Street_Elem.toString());
+
+    		TestModellerLogger.FailStepWithScreenshot(m_Driver, "Enter__Street_", "Enter__Street_ failed. Unable to locate object: " + _Street_Elem.toString());
+
+ 			Assert.fail("Unable to locate object: " + _Street_Elem.toString());
+         }
+
+ 		elem.sendKeys(_Street_);
+ 		
+
+  		ExtentReportManager.passStep(m_Driver, "Enter__Street_ " + _Street_);
+
+  		TestModellerLogger.PassStep(m_Driver, "Enter__Street_ " + _Street_);
  	}}
